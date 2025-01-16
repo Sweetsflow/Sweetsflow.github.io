@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Order Website</h1>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="food-item">
+                <h3>Burger - $5</h3>
+                <button onclick="addToOrder('Burger', 5)">Add to Order</button>
+            </div>
+            <div class="food-item">
+                <h3>Pizza - $8</h3>
+                <button onclick="addToOrder('Pizza', 8)">Add to Order</button>
+            </div>
+            <div class="food-item">
+                <h3>Pasta - $7</h3>
+                <button onclick="addToOrder('Pasta', 7)">Add to Order</button>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>Your Order</h2>
+            <ul id="order-list"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button onclick="submitOrder()">Submit Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Food Order Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
